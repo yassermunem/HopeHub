@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: #0a0a0a;
+  --foreground-color: #fafafa;
+  --card-color: #171717;
+  --link-color: #262626;
+  --paragraph-color: #a3a3a3;
+  --primary-color: #84cc16;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  font-family: cairo, sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  background-color: var(--card-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  text-align: center;
+  color: var(--font-color);
+  margin: auto;
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+p {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.profile-links li a {
+  display: inline-block;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--link-color);
+  text-decoration: none;
+  border-radius: 8px;
+  color: var(--foreground-color);
+  transition: 250ms all ease-in-out;
+  font-weight: 500;
+}
+
+.profile-links li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.profile-links li a:hover {
+  color: var(--background-color);
+  background-color: var(--foreground-color);
+}
+
+.profile-links li {
+  list-style: none;
+}
